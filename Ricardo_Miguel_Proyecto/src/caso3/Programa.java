@@ -24,6 +24,7 @@ public class Programa {
 
 		// Cerrar el scanner
 		scanner.close();
+		System.out.println("Hola");
 	}
 
 	// Función para calcular el área del triángulo usando la fórmula de Herón
@@ -35,5 +36,7 @@ public class Programa {
 		double area = Math.sqrt(s * (s - lado1) * (s - lado2) * (s - lado3));
 
 		return area;
+
 	}
+
 }
