@@ -32,21 +32,21 @@ public class Programa {
 		double alturaCIlindro = entrada.nextInt();
 
 		System.out.println("El area del cilindro es de " + calcularArea(radioCilindro, alturaCIlindro));
-		
-		//Pedimos los datos del rectangulo
+
+		// Pedimos los datos del rectangulo
 		System.out.println("Escribe la base del rectangulo: ");
 		double ladoA_Rectangulo = entrada.nextInt();
-		
+
 		System.out.println("Escribe la altura del rectangulo: ");
 		double ladoB_Rectangulo = entrada.nextInt();
-		
-		System.out.println("El area del rectangulo es de "+ calcularArea(ladoA_Rectangulo, ladoB_Rectangulo));
-		
-		//Pedimos los datos del cubo
+
+		System.out.println("El area del rectangulo es de " + calcularArea(ladoA_Rectangulo, ladoB_Rectangulo));
+
+		// Pedimos los datos del cubo
 		System.out.println("Escribe el lado del cubo: ");
 		double ladoCubo = entrada.nextInt();
-		
-		System.out.println("El volumen del cubo es de "+ calcularAreaCubo(ladoCubo));
+
+		System.out.println("El volumen del cubo es de " + calcularVolumenCubo(ladoCubo));
 
 	}
 
@@ -72,18 +72,16 @@ public class Programa {
 		double area = 2 * 3.14 * radio * (radio + altura);
 		return area;
 	}
-	
-	//Calculamos el área de un rectangulo - Alumno2
-	public static double calcularAreaRectangulo(double base, double altura) 
-	{
+
+	// Calculamos el área de un rectangulo - Alumno2
+	public static double calcularAreaRectangulo(double base, double altura) {
 		double area = base * altura;
 		return area;
 	}
-	
-	//Calculamos el volumen de un cubo - Alumno2
-	public static double calcularAreaCubo(double lado) 
-	{
-		double volumen = lado*lado*6;
+
+	// Calculamos el volumen de un cubo - Alumno1
+	public static double calcularVolumenCubo(double lado) {
+		double volumen = lado * lado * lado;
 		return volumen;
 	}
 
