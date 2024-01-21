@@ -42,6 +42,11 @@ public class Programa {
 		
 		System.out.println("El area del rectangulo es de "+ calcularArea(ladoA_Rectangulo, ladoB_Rectangulo));
 		
+		//Pedimos los datos del cubo
+		System.out.println("Escribe el lado del cubo: ");
+		double ladoCubo = entrada.nextInt();
+		
+		System.out.println("El volumen del cubo es de "+ calcularAreaCubo(ladoCubo));
 
 	}
 
@@ -73,6 +78,13 @@ public class Programa {
 	{
 		double area = base * altura;
 		return area;
+	}
+	
+	//Calculamos el volumen de un cubo - Alumno2
+	public static double calcularAreaCubo(double lado) 
+	{
+		double volumen = lado*lado*6;
+		return volumen;
 	}
 
 }
